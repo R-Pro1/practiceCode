@@ -1,0 +1,28 @@
+myWord = raw_input()
+wordScore = 0
+value = [['A', 'E', 'I', 'O', 'U', 'L', 'N', 'R', 'S', 'T'],
+           ['D','G'],
+           ['B','C','M','P'],
+           ['F','H','V','W','Y'],
+           ['K'],
+           ['J','X'],
+           ['Q','Z']]
+
+
+for letter in myWord:
+     if letter in value[0]:
+         wordScore += 1
+     if letter in value[1]:
+         wordScore += 2
+     if letter in value[2]:
+         wordScore += 3
+     if letter in value[3]:
+         wordScore += 4
+     if letter in value[4]:
+         wordScore += 5
+     if letter in value[5]:
+         wordScore += 8
+     if letter in value[6]:
+         wordScore += 10
+
+print(wordScore)
